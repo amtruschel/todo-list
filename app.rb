@@ -8,17 +8,17 @@ require 'dotenv/load' if development?
 require 'pry' if development?
 
 get '/' do
-  redirect '/todos'
+  return ''
 end
 
-get '/todos' do
+get '/api/todos' do
   return "#{Todo.todo_items}"
 end
 
-post '/new' do
+post '/api/new-post' do
 
 end
 
-put '/update' do
+put '/api/post-update' do
 
 end
